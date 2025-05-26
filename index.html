@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<!-- saved from url=(0103)file:///E:/Skylith/Accounts/New/moonbyte/Main%20Content/In%C3%ADcio%20-%20Skylith%20Portugu%C3%AAs.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Início - Skylith</title>
     <style>
         body {
@@ -65,9 +63,13 @@
         }
         .sidebar li {
             padding: 10px 20px;
-            cursor: pointer;
             font-size: 14px;
             transition: color 0.3s ease;
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         .sidebar li:hover {
             color: #ff6600;
@@ -105,7 +107,10 @@
             grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 20px;
         }
-        .game-tile {
+        .game-tile-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
             background: white;
             border-radius: 5px;
             border: 1px solid #ccc;
@@ -114,7 +119,7 @@
             font-size: 14px;
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
-        .game-tile:hover {
+        .game-tile-link:hover {
             transform: translateY(-5px) scale(1.03);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
@@ -126,6 +131,10 @@
             color: gray;
             font-size: 12px;
         }
+        .game-tile .info .game-title {
+            color: black;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
@@ -133,38 +142,53 @@
         <div class="left-section">Skylith</div>
         <div class="right-section">
             <span class="points">🎙️ Desligado</span>
-            
-        <span class="points">💵 2,365,000</span></div>
+            <span class="points">💵 2,365,000</span>
+        </div>
     </div>
     <div class="sidebar">
         <ul>
-            <li>moonbyte 👑</li>
-            <li>🏠 Início・</li><li>👤 Perfil</li>
-            <li>✉️ Mensagens</li>
-            <li>👥 Amigos</li>
-            <li>👘 Roupas</li>
-            <li>💼 Inventário</li>
-            <li>🔁 Trocar</li>
-            
-            
+            <li><a href="#">moonbyte 👑</a></li>
+            <li><a href="#">🏠 Início</a></li>
+            <li><a href="#">👤 Perfil</a></li>
+            <li><a href="#">✉️ Mensagens</a></li>
+            <li><a href="#">👥 Amigos</a></li>
+            <li><a href="#">👘 Roupas</a></li>
+            <li><a href="#">💼 Inventário</a></li>
+            <li><a href="#">🔁 Trocar</a></li>
         </ul>
         <button>Assine VIP</button>
     </div>
     <div class="main-content">
-        
-        <h2>Recomendações para você
-</h2>
+        <h2>Recomendações para você</h2>
         <div class="recommended">
-            <div class="game-tile">
-                <div class="info">🏀 Jujutsu: Basketball 🏀<span>Oficial</span><span>Avaliação 91%</span></div>
-            </div>
-            
-            
-        <div class="game-tile">
-                <div class="info">🌱 Grow a Garden 2D 🌱<span>Por moonbyte</span><span>Avaliação 100%</span></div>
-            </div><div class="game-tile">
-                <div class="info">⚽ 2D Soccer Game ⚽<span>Por PexinhoParaibano</span><span>Avaliação 100%</span></div>
-            </div></div>
+            <a href="#" class="game-tile-link">
+                <div class="game-tile">
+                    <div class="info">
+                        <span class="game-title">🏀 Jujutsu: Basketball 🏀</span>
+                        <span>Oficial</span>
+                        <span>Avaliação 91%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="game-tile-link">
+                <div class="game-tile">
+                    <div class="info">
+                        <span class="game-title">🌱 Grow a Garden 2D 🌱</span>
+                        <span>Por moonbyte</span>
+                        <span>Avaliação 100%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="game-tile-link">
+                <div class="game-tile">
+                    <div class="info">
+                        <span class="game-title">⚽ 2D Soccer Game ⚽</span>
+                        <span>Por PexinhoParaibano</span>
+                        <span>Avaliação 100%</span>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 
 
