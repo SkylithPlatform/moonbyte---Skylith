@@ -1,6 +1,6 @@
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Skylith - not-approved</title>
+<html lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Início - Skylith</title>
     <style>
         body {
             margin: 0;
@@ -63,9 +63,13 @@
         }
         .sidebar li {
             padding: 10px 20px;
-            cursor: pointer;
             font-size: 14px;
             transition: color 0.3s ease;
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
         .sidebar li:hover {
             color: #ff6600;
@@ -103,7 +107,10 @@
             grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 20px;
         }
-        .game-tile {
+        .game-tile-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
             background: white;
             border-radius: 5px;
             border: 1px solid #ccc;
@@ -112,7 +119,7 @@
             font-size: 14px;
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
-        .game-tile:hover {
+        .game-tile-link:hover {
             transform: translateY(-5px) scale(1.03);
             box-shadow: 0 6px 12px rgba(0,0,0,0.2);
         }
@@ -122,117 +129,11 @@
         .game-tile .info span {
             display: block;
             color: gray;
-            font-size: 12px;
+            font-size: 14px;
         }
-         .ban-box {
-            background-color: #F7F7F8;
-            padding: 15px;
-            border-radius: 0px;
-            max-width: 725px;
-            width: 90%;
-            height: 450px;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.2s forwards;
-            resize: vertical;
-            overflow: auto;
-            min-height: 0px;
-    
-            position: absolute;
-            top: 45%;
-            left: 53.5%;
-            transform: translate(-50%, -50%);
-}
-
-
-        .ban-box h1 {
-            font-size: 28px;
-            color: #202227;
-            margin: 4px 4px 4px -3px;
-            line-height: 0.75;
-            font-weight: 500;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.4s forwards;
-        }
-        .ban-box h2 {
-            font-size: 0px;
-            color: #e5e5e5;
-            margin: 4px 4px 4px 0.2px;
-            line-height: 0.9;
-            font-weight: 500;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.4s forwards;
-        }
-
-        .ban-box p:first-child {
-            margin-top: 5px;
-        }
-
-        .ban-box p {
-            font-size: 14.5px;
-            margin: 4px 4px 9px -3px;
-            line-height: 1.55;
-            color: #202227;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.6s forwards;
-        }
-
-         .ban-box p2 {
-            display: block;
-            font-size: 14.5px;
-            margin: 4.5px 0;
-            padding: 10px 14px;
-            background-color: #f9f9f9;
-            border: 1px solid black;
-            border-radius: 0.5px;
-            color: #202227;
-            font-weight: 500;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.6s forwards;
-}
-         .ban-box recentviolation {
-            display: block;
-            font-size: 14.5px;
-            margin: 10px 0;
-            padding: 5px 14px;
-            background-color: #f9f9f9;
-            border-left: 1px solid black;
-            border-radius: 0.5px;
-            color: #202227;
-            font-weight: 500;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.6s forwards;
-}
-        .ban-box b {
-            color: #f0f0f0;
-            font-weight: 500;
-        }
-
-        .ban-box span {
-            color: #5E8FFF;
-            text-decoration: none;
-        }
-
-        .logout-button {
-            margin-top: 35px;
-            padding: 10px 25px;
-            font-size: 16px;
-            border: 1px solid #777;
-            border-radius: 6px;
-            background-color: #2b2b2b;
-            color: #ffffff;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-out 0.8s forwards;
-        }
-
-        .logout-button:hover {
-            background-color: #3a3a3a;
-        }
-
-        .caution {
-            color: #ff4d4d;
-            font-weight: bold;
+        .game-tile .info .game-title {
+            color: black;
+            font-weight: normal;
         }
     </style>
 </head>
@@ -240,35 +141,61 @@
     <div class="topbar">
         <div class="left-section">Skylith</div>
         <div class="right-section">
-            <span class="points">🎙️ Chat de voz desconectado</span>
-            
-        <span class="points">💵 ?</span></div>
+            <span class="points">🎙️ Desligado</span>
+            <span class="points">💵 2,365,000</span>
+        </div>
     </div>
     <div class="sidebar">
         <ul>
-            <li>moonbyte 👑</li>
-            <li>🏠 Início</li><li>👤 Perfil</li>
-            <li>✉️ Mensagens</li>
-            <li>👥 Amigos</li>
-            <li>👘 Roupas</li>
-            <li>💼 Inventário</li>
-            <li>🔁 Trocar</li>
-            
-            
+            <li><a href="javascript:void(0)">moonbyte 👑</a></li>
+            <li><a href="https://skylithplatform.github.io/moonbyte---Skylith/">🏠 Início</a></li>
+            <li><a href="https://skylithplatform.github.io/skylith-moonbyte---moonbyte---Profile/">👤 Perfil</a></li>
+            <li><a href="javascript:void(0)">✉️ Mensagens</a></li>
+            <li><a href="https://skylithplatform.github.io/skylith-moonbyte---moonbyte---Profile/">👥 Amigos</a></li>
+            <li><a href="https://skylithplatform.github.io/skylith-moonbyte---moonbyte---Profile/">👘 Roupas</a></li>
+            <li><a href="https://skylithplatform.github.io/skylith-moonbyte---moonbyte---Profile/">💼 Inventário</a></li>
+            <li><a href="javascript:void(0)">🔁 Trocar</a></li>
         </ul>
         <button>Assine VIP</button>
     </div>
-    <div class="main-content"></div>
-<div class="ban-box" style="height: 344px;">
-        <h1>Banido(a) por 1 dia</h1>
-        
-        <h2>[h2]</h2><h2>[h2]</h2><h2>[h2]</h2><p>Nossos supervisores de conteúdo determinaram que o seu comportamento na Skylith violou os nossos <span>Termos de Uso</span>.</p>
-        <p>Violação recente:</p>
-        <recentviolation>Revisado: <strong>4/6/25, 22:28 BRT<h2>h2</h2><h2>h2</h2></strong>Observação do moderador: <strong>A Skylith não permite linguagem, comportamento ou conteúdo discriminatório de nenhum tipo.</strong><h2>h2</h2><h2>h2</h2><p2>Motivo: <strong>Discriminatório<h2>h2</h2><h2>h2</h2></strong><h2></h2>Item ofensivo: <strong>Asset Name:Noli2 Asset ID:124791137629161</strong></p2></recentviolation>
-        
-        <p>Por favor, respeite as <span>Regras da Comunidade Skylith </span>para que a Skylith possa ser divertida para usuários de todas as idades.</p>
-        <p>Sua conta foi suspensa devido ao seu histórico de violações recentes. Você pode reativá-la após 4/7/25, 22:28 BRT.</p><p>Para solicitar um apelo, por favor envie um email para<span> skylithappeals@outlook.com.</span></p>
+    <div class="main-content">
+        <h2>Recomendações para você</h2>
+        <div class="recommended">
+            <a href="https://skylithplatform.github.io/skylith-moonbyte-jujutsu-basketball/" class="game-tile-link">
+                <div class="game-tile">
+                    <div class="info">
+                        <span class="game-title">🏀 Jujutsu: Basketball 🏀</span>
+                        <span>Oficial</span>
+                        <span>Avaliação 91%</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://skylithplatform.github.io/skylith-moonbyte-growagarden2D/" class="game-tile-link">
+                <div class="game-tile">
+                    <div class="info">
+                        <span class="game-title">🌱 Grow a Garden 2D 🌱</span>
+                        <span>Por moonbyte</span>
+                        <span>Avaliação 100%</span>
+                    </div>
+                </div>
+            </a>
+            
+        <a href="https://skylithplatform.github.io/skylith-moonbyte-alien-attack/" class="game-tile-link">
+                <div class="game-tile">
+                    <div class="info">
+                        <span class="game-title">👽 Alien Attack 👽</span>
+                        <span>Por moonbyte</span>
+                        <span>Avaliação 89%</span>
+                    </div>
+                </div>
+            </a></div>
     </div>
+
+
+
+
+
+
 
 
 </body></html>
